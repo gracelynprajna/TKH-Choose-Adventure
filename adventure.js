@@ -1,9 +1,16 @@
+
 let option1 = prompt ("You are in a dim lit room. There is a door. You see a torch and a knife. Choose one.")
 
 if (option1==='torch'){
     let option2 = prompt('You pick up the torch. You open the door to a hallway and see something running towards you. Do you fight or keep running? Type fight or run.')
-    if (option2==='fight'.toLowerCase){
-        alert('You choose to burn the mysterious creature with the torch. It was a skinwalker. You run towards the door and you escape. Congratulations!!')
+    if (option2==='fight'){
+        let option10 = prompt('You choose to burn the mysterious creature with the torch. It was a skinwalker. You run towards the door but it is locked. Do you keep trying to open the door or recheck if the skinwalker is dead first? Type door or check.')
+        if (option10==='door'){
+            alert('The skinwalker comes back to life and since you took too long it strangles you. You die. RIP.')
+        }
+        else if (option10==='check'){
+            alert('You carefully recheck to see if it is still dead and it is. The door opens itself and you escape. CONGRATULATIONS!!')
+        }
     }
     else if (option2==='run'){
        let option4 = prompt('You decided to keep running towards the door at the end of the hall but it is locked. The mysterious thing catches up with you. Do you keep trying to open the door or fight back? Type back or door.')
