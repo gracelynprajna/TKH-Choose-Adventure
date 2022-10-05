@@ -2,7 +2,7 @@ let option1 = prompt ("You are in a dim lit room. There is a door. You see a tor
 
 if (option1==='torch'){
     let option2 = prompt('You pick up the torch. You open the door to a hallway and see something running towards you. Do you fight or keep running? Type fight or run.')
-    if (option2==='fight'){
+    if (option2==='fight'.toLowerCase){
         alert('You choose to burn the mysterious creature with the torch. It was a skinwalker. You run towards the door and you escape. Congratulations!!')
     }
     else if (option2==='run'){
